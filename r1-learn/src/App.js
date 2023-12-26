@@ -8,12 +8,18 @@ function App() {
   // age in HTML
   const age = <h2>19</h2>
   const email = <h3>ray040406@gmail.com</h3>
-  return (
-    <div className="App">
+
+  // user variable packed in a div
+  const user = 
+  <div>
       {name2}
       {age}
       {email}
-    
+  </div>
+
+  return (
+    <div className="App">
+      {user}
     </div>
   );
 }
