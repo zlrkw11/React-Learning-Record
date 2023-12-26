@@ -19,6 +19,10 @@ function App() {
 
   return (
     <div className="App">
+      <User name="Ray" age={21} email="ray040406@gmail.com"/>
+      <User/>
+      <User/>
+      <User/>
       <User/>
     </div>
   );
@@ -35,12 +39,12 @@ const GetNameComponent = () => {
 }
 
 // user component
-const User = () => {
+const User = (props) => {
   return (
     <div>
-        <h1>Ray</h1>
-        <h2>19</h2>
-        <h1>ray040406@gmail.com</h1>
+        <h1>{props.name}</h1>
+        <h2>{props.age}</h2>
+        <h1>{props.email}</h1>
     </div>
   )
 }
