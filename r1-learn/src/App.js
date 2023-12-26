@@ -17,11 +17,25 @@ function App() {
       {email}
   </div>
 
+
+
   return (
     <div className="App">
       {user}
     </div>
   );
 }
+
+// function
+const GetName = () => {
+  return 'Ray';
+}
+
+// component
+const GetNameComponent = () => {
+  return <h1>Ray</h1>;
+}
+
+
 
 export default App;
