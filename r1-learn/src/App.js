@@ -17,11 +17,9 @@ function App() {
       {email}
   </div>
 
-
-
   return (
     <div className="App">
-      {user}
+      <User/>
     </div>
   );
 }
@@ -34,6 +32,17 @@ const GetName = () => {
 // component
 const GetNameComponent = () => {
   return <h1>Ray</h1>;
+}
+
+// user component
+const User = () => {
+  return (
+    <div>
+        <h1>Ray</h1>
+        <h2>19</h2>
+        <h1>ray040406@gmail.com</h1>
+    </div>
+  )
 }
 
 
