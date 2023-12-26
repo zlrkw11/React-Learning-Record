@@ -19,11 +19,10 @@ function App() {
 
   return (
     <div className="App">
-      <User name="Ray" age={21} email="ray040406@gmail.com"/>
-      <User/>
-      <User/>
-      <User/>
-      <User/>
+      <User name="Ray" age={19} email="ray040406@gmail.com"/>
+      <Job salary={81000} position="Junior SDE" company="Google"/>
+      <User name="Nate" age={20} email="nw1239022@gmail.com"/>
+      <Job salary={90000} position="Senior SDE" company="Amazon"/>
     </div>
   );
 }
@@ -47,6 +46,18 @@ const User = (props) => {
         <h1>{props.email}</h1>
     </div>
   )
+}
+
+// exercise component
+const Job = (props) => {
+  return(
+    <div>
+      <h3>{props.salary}</h3>
+      <h3>{props.position}</h3>
+      <h3>{props.company}</h3>
+    </div>
+  ) 
+
 }
 
 
