@@ -1,8 +1,12 @@
 import "./App.css";
 
-function App(){
+// ternary operators
 
-    return <div className="App">1</div>
+function App(){
+    const age = 15
+    return <div className="App">{age >= 18 ? <h1>OVER AGE</h1> : <h1>UNDER AGE</h1>}</div>
 }
+
+
 
 export default App
