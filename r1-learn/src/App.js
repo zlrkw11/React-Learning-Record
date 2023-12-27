@@ -45,7 +45,7 @@ const User = (props) => {
         <h2>{props.age}</h2>
         <h1>{props.email}</h1>
     </div>
-  )
+  )  
 }
 
 // exercise component
