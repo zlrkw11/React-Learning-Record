@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import "../App.css";
 function App() {
   const name = "Ray";
 
@@ -18,7 +18,7 @@ function App() {
   </div>
 
   return (
-    <div className={styles.App}>
+    <div className='App'>
       <User name="Ray" age={19} email="ray040406@gmail.com"/>
       <Job salary={81000} position="Junior SDE" company="Google"/>
       <User name="Nate" age={20} email="nw1239022@gmail.com"/>
@@ -42,7 +42,7 @@ const GetNameComponent = () => {
 const User = (props) => {
   return (
     <div>
-        <h1 className={styles.name}>{props.name}</h1>
+        <h1>{props.name}</h1>
         <h2>{props.age}</h2>
         <h1>{props.email}</h1>
     </div>

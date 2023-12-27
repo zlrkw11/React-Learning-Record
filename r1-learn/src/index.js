@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from '../lesson files/App';
+import App from './D3'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
