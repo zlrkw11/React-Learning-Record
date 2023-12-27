@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './D3-list'
+import App from './D3-list-of-obj'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
