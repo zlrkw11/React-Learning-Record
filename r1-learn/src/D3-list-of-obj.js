@@ -1,4 +1,5 @@
 import "./App.css";
+import {User} from "./User";
 
 function App(){
     const users = [
@@ -24,15 +25,7 @@ function App(){
 
 }
 
-// User component
-const User = (props) => {
-    return (
-        <div>
-            {props.name}{props.age}
-        </div>
-    )
 
-}
 
 
 export default App
