@@ -7,11 +7,10 @@ function App(){
     
     const [showText, setShowText] = useState(true);
 
-
     return (
         <div className="App">
-            <button>Show / Hide</button>
-            <h1>Hi my name is Ray</h1>
+            <button onClick={() => {(setShowText(!showText))}}>Show / Hide</button>
+            {showText === true && <h1>Hi my name is Ray</h1>}
         </div>
         )
 
