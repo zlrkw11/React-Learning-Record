@@ -1,5 +1,5 @@
 import { Planet } from "./Planet";
-
+import "./App.css"
 
 function App(){
     const planets = [
@@ -13,9 +13,9 @@ function App(){
     ]
 
     return (
-        <div className='App'>
+        <div className="App">
             {planets.map((planet, key) => {
-                return planet.isGasPlanet && <h1>{planet.name}</h1>
+                return planet.isGasPlanet && <Planet name = {planet.name}/>
             })}
             
         </div>
