@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './D4-states-3-CSS'
+import App from './D4-exercise'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
