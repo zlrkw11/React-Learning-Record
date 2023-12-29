@@ -9,7 +9,11 @@ function App(){
 
     return (
         <div className="App">
-           <button onClick={() => {(setTextColor("green"))}}>Change Color</button>
+           <button onClick={() => {
+            
+            setTextColor(textColor==="black" ? "red" : "black")
+
+            }}>Change Color</button>
            <h1 style={{color: textColor}}>Hi my name is Ray</h1>
         </div>
         )
