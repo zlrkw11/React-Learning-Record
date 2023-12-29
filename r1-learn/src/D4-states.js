@@ -2,16 +2,18 @@ import "./App.css"
 
 function App(){
 
-    const age = 0
+    let age = 0
 
     // event function to pass
     const increaseAge = () => {
         age = age + 1;
+        console.log(age)
     }
-    
+
     return (
-        <div className="App">{age}
-        <button onClick={}> Increase Age </button>
+        <div className="App">
+            {age}
+            <button onClick={increaseAge}> Increase Age </button>
         </div>
         )
 
