@@ -1,13 +1,15 @@
 import "./App.css"
+import {useState} from "react";
+
 
 function App(){
 
-    let age = 0
+    const [age, setAge] = useState(0)
+    
 
     // event function to pass
     const increaseAge = () => {
-        age = age + 1;
-        console.log(age)
+        setAge(age + 1)
     }
 
     return (
