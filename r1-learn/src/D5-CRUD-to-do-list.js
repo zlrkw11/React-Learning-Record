@@ -11,7 +11,7 @@ function App(){
 
     const handleChange = (event) => {
         // setNewTask sets newTask's value
-        setNewTask = event.target.value;
+        setNewTask(event.target.value);
     };
 
     return (
@@ -21,6 +21,7 @@ function App(){
                 <button>Add Task</button>
             </div>
             <div className="list"></div>
+            {newTask}
         </div>
     )
 
