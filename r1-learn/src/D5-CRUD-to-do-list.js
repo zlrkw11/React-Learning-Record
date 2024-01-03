@@ -1,6 +1,6 @@
 import './App.css'
 import {useState} from 'react'
-
+import {} from "./Task";
 // 1st CRUD 
 function App(){
     // list empty at the initial state
@@ -40,12 +40,7 @@ function App(){
             </div>
             <div className="list">
                 {todoList.map((task)=> {
-                    return (
-                    <div>
-                        <h1>{task.taskName}</h1>
-                        <button onClick={()=> deleteTask(task.id)}>x</button>
-                    </div>
-                    )
+                    return <Task taskName={task.taskName} id={task.id}/>
                 })}
 
             </div>
