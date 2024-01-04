@@ -1,5 +1,11 @@
 // CAT DATA FETCH API 
 import "./App.css";
+fetch("https://catfact.ninja/fact")
+.then((res)=> res.json()
+.then((data) => {
+    console.log(data)
+}));
+
 
 function App() {
     return (
