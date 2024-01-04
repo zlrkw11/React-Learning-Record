@@ -9,6 +9,8 @@ function App(){
         <div className="App">
 
             <button onClick={()=> {setShowText(!showText)}}> Show Text </button>
+
+            {showText && <Text/>}
         </div>
     )
 }
