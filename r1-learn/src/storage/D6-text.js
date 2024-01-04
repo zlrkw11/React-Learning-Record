@@ -15,7 +15,6 @@ export const Text = () => {
         }
     }, [])
 
-
     return (
 
     <div> 
