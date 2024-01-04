@@ -6,9 +6,16 @@ export const Text = () => {
     const [text, setText] = useState("");
 
     useEffect( ()=> {
-        // whatever put inside
+        // MOUNT ACTION
         console.log("COMPONENT MOUNTED")
-    })
+
+        // UNMOUNT function
+        return () => {
+            console.log("COMPONENT UNMOUNTED")
+        }
+    }, [])
+
+
     return (
 
     <div> 
